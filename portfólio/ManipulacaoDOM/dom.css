@@ -22,7 +22,7 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-color);
     line-height: 1.6;
-    padding: 2rem; /* Usando rem para melhor escalabilidade */
+    padding: 2rem; 
 }
 
 
@@ -44,7 +44,7 @@ h1 {
     color: var(--text-light);
     padding: 12px 24px;
     font-size: 1rem;
-    border: 2px solid transparent; /* Evita que o layout pule no foco */
+    border: 2px solid transparent; 
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: var(--transition-fast);
@@ -52,7 +52,7 @@ h1 {
 
 .exemplo-dom button:hover {
     background-color: var(--bg-button-hover);
-    transform: translateY(-1px); /* Sutil efeito de elevação */
+    transform: translateY(-1px);
 }
 
 .exemplo-dom button:active {
@@ -61,7 +61,7 @@ h1 {
 
 
 .botao-home {
-    display: inline-block; /* Garante que o padding e margens funcionem bem */
+    display: inline-block; 
     background-color: var(--bg-button);
     color: var(--text-light);
     padding: 10px 20px;
