@@ -1,0 +1,24 @@
+body { font-family: Arial, sans-serif; padding: 30px; }
+h1 { text-align: center; }
+
+.exemplo-dom {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.exemplo-dom button {
+    background-color: #282c34;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.botao-home {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
