@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styel.css">
+    <title>Validação de Interfaces</title>
+</head>
+<body>
+
+    <a href="index.html" class="botao-home">🏠 Voltar ao Início</a>
+
+    <main class="page-container">
+        <header class="page-header">
+            <h1>Validação de Interfaces de Formulário</h1>
+            <p>Garantindo dados íntegros e uma experiência fluida para o usuário.</p>
+        </header>
+
+        <section class="card-section">
+            <h2>Por que Validar Interfaces?</h2>
+            <p>A validação impede o envio de dados incorretos ou vazios ao servidor, reduz erros, aumenta a segurança do sistema e ajuda o usuário a corrigir inconsistências em tempo real.</p>
+        </section>
+
+        <section class="card-section">
+            <h2>Demonstração Prática</h2>
+            <p>Tente simular o preenchimento ou clique diretamente no botão para ver a validação nativa do navegador em ação:</p>
+            
+            <form class="formulario-interativo">
+                <div class="campo-grupo">
+                    <input type="text" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="campo-grupo">
+                    <input type="email" placeholder="Digite seu melhor e-mail" required>
+                </div>
+                <div class="campo-grupo">
+                    <input type="password" placeholder="Crie uma senha (mínimo 6 caracteres)" minlength="6" required>
+                </div>
+                <button type="submit" class="btn-enviar">Cadastrar Dados</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
