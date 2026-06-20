@@ -1,11 +1,11 @@
-/* Configurações Globais e Variáveis de Cores */
+
 :root {
-    --bg-dark-deep: #0a1128;       /* Azul Escuro Profundo para o fundo */
-    --bg-dark-card: #101f42;       /* Azul Escuro Intermediário para os cartões */
-    --blue-royal: #1c52f2;         /* Azul Royal para destaques */
-    --blue-glow: #00d4ff;          /* Azul Ciano para efeitos de brilho */
-    --text-main: #f0f4f8;          /* Texto claro */
-    --text-muted: #94a3b8;         /* Texto secundário */
+    --bg-dark-deep: #0a1128;       
+    --bg-dark-card: #101f42;       
+    --blue-royal: #1c52f2;         
+    --blue-glow: #00d4ff;          
+    --text-main: #f0f4f8;          
+    --text-muted: #94a3b8;         
     --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -26,14 +26,14 @@ body {
     align-items: center;
 }
 
-/* Container Principal */
+
 .main-container {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* Cabeçalho */
+
 .portfolio-header {
     text-align: center;
     margin-bottom: 3.5rem;
@@ -84,7 +84,7 @@ body {
     font-weight: 500;
 }
 
-/* Seção de Conteúdo */
+
 .grid-section {
     background-color: rgba(16, 31, 66, 0.4);
     border-radius: 24px;
@@ -113,14 +113,14 @@ body {
     box-shadow: 0 0 10px var(--blue-royal);
 }
 
-/* Grade Interativa (Menu) */
+
 .interactive-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
-/* Cartões Interativos */
+
 .nav-card {
     background-color: var(--bg-dark-card);
     text-decoration: none;
@@ -156,7 +156,7 @@ body {
     line-height: 1.5;
 }
 
-/* Efeito de Interação (Hover) nos Cartões */
+
 .nav-card:hover {
     transform: translateY(-5px);
     border-color: var(--blue-royal);
@@ -172,7 +172,7 @@ body {
     transform: scale(1.15) rotate(5deg);
 }
 
-/* Responsividade para telas menores */
+
 @media (max-width: 640px) {
     body {
         padding: 1rem 0.5rem;
@@ -188,7 +188,7 @@ body {
     }
     
     .interactive-grid {
-        grid-template-columns: 1fr; /* Coluna única no celular */
+        grid-template-columns: 1fr; 
         gap: 1rem;
     }
 }
