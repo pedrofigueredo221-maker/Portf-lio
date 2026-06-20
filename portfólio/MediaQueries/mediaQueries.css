@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    padding: 30px;
+}
+
+h1 { text-align: center; color: darkblue; }
+
+.caixa {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.botao-home {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    body { background: #1f1f1f; color: white; }
+    h1 { color: #61dafb; }
+    .caixa { background-color: #444; }
+}
