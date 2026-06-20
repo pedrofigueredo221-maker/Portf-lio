@@ -1,0 +1,30 @@
+body { font-family: Arial, sans-serif; padding: 30px; }
+h1 { text-align: center; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: steelblue;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.botao-home {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .grid-container { grid-template-columns: 1fr; }
+}
