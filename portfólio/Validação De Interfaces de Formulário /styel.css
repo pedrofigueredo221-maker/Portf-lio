@@ -1,0 +1,109 @@
+:root {
+    --bg-dark-deep: #0a1128;
+    --bg-dark-card: #101f42;
+    --blue-royal: #1c52f2;
+    --blue-glow: #00d4ff;
+    --text-main: #f0f4f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark-deep);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    padding: 6rem 1rem 2rem;
+}
+
+.page-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+.card-section {
+    background-color: var(--bg-dark-card);
+    border: 1px solid rgba(28, 82, 242, 0.2);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card-section h2 {
+    color: var(--blue-glow);
+    margin-bottom: 1rem;
+}
+
+/* Estilização do Formulário Realçado */
+.formulario-interativo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.campo-grupo input {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(10, 17, 40, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo-grupo input:focus {
+    outline: none;
+    border-color: var(--blue-glow);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.25);
+}
+
+.btn-enviar {
+    background: var(--blue-royal);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #2762ff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(28, 82, 242, 0.4);
+}
+
+.botao-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--blue-royal);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(28, 82, 242, 0.4);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.botao-home:hover {
+    background-color: #1643c7;
+    transform: translateY(-2px);
+}
