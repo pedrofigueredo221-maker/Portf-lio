@@ -1,41 +1,194 @@
-body {
-    background-color: rgb(82, 81, 81);
-    font-family: Arial, Helvetica, sans-serif;
+/* Configurações Globais e Variáveis de Cores */
+:root {
+    --bg-dark-deep: #0a1128;       /* Azul Escuro Profundo para o fundo */
+    --bg-dark-card: #101f42;       /* Azul Escuro Intermediário para os cartões */
+    --blue-royal: #1c52f2;         /* Azul Royal para destaques */
+    --blue-glow: #00d4ff;          /* Azul Ciano para efeitos de brilho */
+    --text-main: #f0f4f8;          /* Texto claro */
+    --text-muted: #94a3b8;         /* Texto secundário */
+    --transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
     margin: 0;
-    padding: 15px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    background-color: rgb(79, 30, 124);
-    border-radius: 10px;
-}
-
-.navBar {
-    font-size: 18px;
+body {
+    background-color: var(--bg-dark-deep);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    gap: 20px;
 }
 
-.navBar a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease;
-    padding: 8px 12px;
-    border-radius: 8px;
+/* Container Principal */
+.main-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.navBar a:hover {
-    background-color: rgb(118, 60, 170);
-    transform: translateY(-3px);
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
-
-h1, h2, h3 {
+/* Cabeçalho */
+.portfolio-header {
     text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.portfolio-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 30%, var(--blue-glow));
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.student-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--bg-dark-card);
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    border: 1px solid rgba(28, 82, 242, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+.student-name {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.student-id {
+    font-size: 0.85rem;
+    background-color: var(--blue-royal);
     color: white;
-    margin-top: 20px;
+    padding: 0.15rem 0.6rem;
+    border-radius: 20px;
+    font-family: monospace;
+}
+
+.professor-info {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.professor-info span {
+    color: var(--blue-glow);
+    font-weight: 500;
+}
+
+/* Seção de Conteúdo */
+.grid-section {
+    background-color: rgba(16, 31, 66, 0.4);
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid rgba(28, 82, 242, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 70%;
+    width: 4px;
+    background-color: var(--blue-royal);
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--blue-royal);
+}
+
+/* Grade Interativa (Menu) */
+.interactive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Cartões Interativos */
+.nav-card {
+    background-color: var(--bg-dark-card);
+    text-decoration: none;
+    color: var(--text-main);
+    padding: 1.75rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: transform 0.3s var(--transition), 
+                border-color 0.3s var(--transition), 
+                box-shadow 0.3s var(--transition);
+    cursor: pointer;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    transition: transform 0.3s var(--transition);
+}
+
+.nav-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: color 0.3s var(--transition);
+}
+
+.nav-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Efeito de Interação (Hover) nos Cartões */
+.nav-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue-royal);
+    box-shadow: 0 10px 25px rgba(28, 82, 242, 0.25),
+                0 0 1px var(--blue-glow);
+}
+
+.nav-card:hover h3 {
+    color: var(--blue-glow);
+}
+
+.nav-card:hover .card-icon {
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 640px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+    
+    .portfolio-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .grid-section {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+    
+    .interactive-grid {
+        grid-template-columns: 1fr; /* Coluna única no celular */
+        gap: 1rem;
+    }
 }
