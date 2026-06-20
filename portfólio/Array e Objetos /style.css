@@ -1,0 +1,93 @@
+:root {
+    --bg-dark-deep: #0a1128;
+    --bg-dark-card: #101f42;
+    --blue-royal: #1c52f2;
+    --blue-glow: #00d4ff;
+    --text-main: #f0f4f8;
+    --code-bg: #060b18;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark-deep);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    padding: 6rem 1rem 2rem;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, #ffffff, var(--blue-glow));
+    
+    -webkit-text-fill-color: transparent;
+}
+
+.card-section {
+    background-color: var(--bg-dark-card);
+    border: 1px solid rgba(28, 82, 242, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card-section h2 {
+    color: var(--blue-glow);
+    margin-bottom: 1rem;
+}
+
+/* Bloco de Código Estilizado (Tema Dark Dev) */
+pre {
+    background-color: var(--code-bg);
+    border-left: 4px solid var(--blue-glow);
+    padding: 1.25rem;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    color: #a9b2c3;
+    margin-top: 1rem;
+}
+
+/* Cores de Realce de Sintaxe */
+.keyword { color: #ff7b72; font-weight: bold; }
+.variable { color: #79c0ff; }
+.string { color: #a5d6ff; }
+.number { color: #f2cc60; }
+.function-name { color: #d2a8ff; }
+
+.botao-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--blue-royal);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(28, 82, 242, 0.4);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.botao-home:hover {
+    background-color: #1643c7;
+    transform: translateY(-2px);
+}
